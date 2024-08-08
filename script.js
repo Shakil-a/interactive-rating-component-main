@@ -10,13 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
         numButtons.forEach((button) => {
             button.addEventListener('click', (e) => {
                 btnClickedValue = e.target.dataset.number;
-                console.log(btnClickedValue)
             })
         })
 
     // 5. we then want an event listener on the submit button on if theres a value we want to redirect to the success page with the users rating
     submitBtn.addEventListener('click', () => {
         if (btnClickedValue){
+            localStorage.setItem('selectedRating', btnClickedValue);
             window.location.href = "successPage.html"
         }
 
