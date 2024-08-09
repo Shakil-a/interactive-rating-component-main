@@ -1,7 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
 :root{
  --Orange: hsl(25, 97%, 53%);
  --White: hsl(0, 0%, 100%);
  --Light-Grey: hsl(217, 12%, 63%);
  --Dark-Blue: hsl(213, 19%, 18%);
  --Very-Dark-Blue: hsl(216, 12%, 8%); 
+}
+
+body{
+    background-color: var(--Very-Dark-Blue);
+    font-size: 15px;
+    font-family: "Overpass", sans-serif;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+main{
+    background-color: var(--Dark-Blue);
+    max-width: 290px;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    display: grid;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.numBtn{
+    background-color: grey;
+    border-radius: 50%;
+    padding: 10px;
+    border: none;
+    width: 2.2rem;
+    color: var(--White);
+    cursor: pointer;
+}
+
+h2{
+    color: white;
+}
+
+p{
+    color: var(--Light-Grey);
+}
+
+img{
+    border-radius: 50%;
+    padding: 10px;
+    background-color: grey;
+}
+
+#submitBtn{
+    border: none;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: var(--Orange);
+    font-weight: 700;
+    letter-spacing: 0.1rem;
+    font-size: 15px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#error-message{
+    color: red;
 }
